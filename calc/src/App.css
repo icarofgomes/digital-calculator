@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 10fr 80fr 10fr;
     grid-template-columns: 35fr 30fr 35fr;
-    height: 100vh;
+    height: 85vh;
 }
 
 .calculator{
@@ -10,7 +10,7 @@
     grid-row: 2;
     border: 1px solid black;
     border-radius: 5%;
-    padding: 1em;
+    padding: 0.7em;
     max-height: 100%;
     overflow: hidden;
     display: flex;
@@ -21,25 +21,39 @@
 }
 
 .button{
-    margin: 1em;
+    margin: 0.5em;
     display: grid;
     place-items: center;
-    width: 3em;
-    height: 3em;
+    width: 3.7em;
+    height: 3.7em;
     border: 1px solid #bbb;
     background-color: rgb(78, 143, 205);
     color: rgb(2, 10, 43);
     cursor: pointer;
-    border-radius: 1em 1em 1em 1em;
+    border-radius: 1.3em 1.3em 1.3em 1.3em;
     box-shadow: 0 0 0.1em white;
 }
 
 .buttonsConteiner{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     background-color: rgb(2, 10, 43);
     box-shadow: 0 0 0.2em white;
+}
+
+.buttonsNumbers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(2, 10, 43);
+}
+
+.buttonsOperators{
+    display: flex 0 1 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(37, 54, 119);
 }
 
 .display{
@@ -64,7 +78,7 @@
     border: 1px solid #bbb;
     border-radius: 0.5em 0.5em 0em 0em;
     background-color: rgb(255, 163, 163);
-    color: rgb(2, 10, 43);
+    color: rgb(43, 2, 2);
     padding: 0.5em;
     font-size: 1.5em;
     box-shadow: 0 0 0.2em white;
